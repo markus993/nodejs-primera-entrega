@@ -1,6 +1,6 @@
-const {cursos} = require('./cursos');
-
-let lista = (i = 0 )=> {
+// Funcion recursiva para listar cursos
+let lista = (i = 0)=> {
+    let {cursos} = require('./cursos');
     if (typeof(cursos[i]) != "undefined") {
         console.log(
             'El curso '+cursos[i].nombre+

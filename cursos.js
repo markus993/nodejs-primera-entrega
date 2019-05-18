@@ -1,3 +1,4 @@
+// Listado de cursos
 const cursos =[
     {
         id:1,
@@ -22,6 +23,4 @@ const cursos =[
     }
 ];
 
-module.exports = {
-    cursos
-};
+module.exports = {cursos};
