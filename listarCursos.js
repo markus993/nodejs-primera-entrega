@@ -3,7 +3,7 @@ let lista = (i = 0)=> {
     let {cursos} = require('./cursos');
     if (typeof(cursos[i]) != "undefined") {
         console.log(
-            'El curso '+cursos[i].nombre+
+            '\tEl curso '+cursos[i].nombre+
             '(Id:'+cursos[i].id+') tiene una duracion de '+
             cursos[i].duracion+' horas y un valor de '+
             cursos[i].valor+' pesos.\n'

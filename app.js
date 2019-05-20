@@ -11,11 +11,13 @@ const argv = require('yargs')
     'Opciones:\n'+
     '\tListado de cursos => app cursos\n'+
     '\tPre-inscripcion a un curso => app preinscripcion -n={Nombre estudiante} -i={identificacion estudiante} -c={Id del curso} \n'
-  )
+  );
+  console.log('Listado de cursos disponibles:');
+  listarCursos.lista();
 })
 // Comando que muestra el listado de cursos
 .command(
-  'cursos','-> Muestra los cursos disponibles',
+  'cursos','-> Muestra los cursos disponibles:',
   ()=>{listarCursos.lista();}
 )
 // Comando para la preinscripcion del estudiante al curso
